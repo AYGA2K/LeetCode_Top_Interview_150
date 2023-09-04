@@ -1,4 +1,4 @@
-package main
+package leet
 
 import "sort"
 
@@ -7,7 +7,7 @@ import "sort"
 // Explanation: The arrays we are merging are [1,2,3] and [2,5,6].
 // The result of the merge is [1,2,2,3,5,6] with the underlined elements coming from nums1.
 
-func merge(nums1 []int, m int, nums2 []int, n int) {
+func Merge(nums1 []int, m int, nums2 []int, n int) {
 	nums1 = append(nums1[:m], nums2[:n]...)
 	sort.Slice(nums1, func(i, k int) bool {
 		return nums1[i] < nums1[k]

@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/AYGA2K/LeetCode_Top_Interview_150/leet"
+)
 
 func main() {
-	fmt.Println("Go Go")
+	arr := []int{3, 2, 2, 3}
+	fmt.Println(leet.RemoveElement(arr, 3))
 }
