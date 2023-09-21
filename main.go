@@ -1,8 +1,12 @@
 package main
 
-import "github.com/AYGA2K/LeetCode_Top_Interview_150/leet"
+import (
+	"fmt"
+
+	"github.com/AYGA2K/LeetCode_Top_Interview_150/leet"
+)
 
 func main() {
-	arr := []int{1, 2, 3, 4, 5, 6, 7}
-	leet.Rotate(arr, 3)
+	arr := []int{7, 1, 5, 3, 6, 4}
+	fmt.Println(leet.MaxProfit(arr))
 }
