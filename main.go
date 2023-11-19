@@ -7,6 +7,8 @@ import (
 )
 
 func main() {
-	arr := []int{7, 1, 5, 3, 6, 4}
-	fmt.Println(leet.MaxProfit(arr))
+	str := "   fly me   to   the moon  "
+	str1 := "a "
+	fmt.Println(leet.LengthOfLastWord(str))
+	fmt.Println(leet.LengthOfLastWord(str1))
 }
