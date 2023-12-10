@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	str := "   fly me   to   the moon  "
-	str1 := "a "
-	fmt.Println(leet.LengthOfLastWord(str))
-	fmt.Println(leet.LengthOfLastWord(str1))
+	strArray := []string{"hiasss", "hia", "hiafad"}
+	fmt.Println(leet.LongestCommonPrefix(strArray))
+	strArray2 := []string{"ab", "a"}
+	fmt.Println(leet.LongestCommonPrefix(strArray2))
 }
