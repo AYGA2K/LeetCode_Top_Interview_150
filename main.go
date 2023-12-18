@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	strArray := []string{"hiasss", "hia", "hiafad"}
-	fmt.Println(leet.LongestCommonPrefix(strArray))
-	strArray2 := []string{"ab", "a"}
-	fmt.Println(leet.LongestCommonPrefix(strArray2))
+	arr := []int{2, 3, 1, 1, 4}
+	arr2 := []int{3, 2, 1, 0, 4}
+	fmt.Println(leet.CanJump(arr))
+	fmt.Println(leet.CanJump(arr2))
 }

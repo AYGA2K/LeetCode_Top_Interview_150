@@ -1,6 +1,6 @@
 package leet
 
-func MaxProfit(prices []int) int {
+func MaxProfitII(prices []int) int {
 	buy := 0
 	var sell int
 	sell = buy
@@ -11,14 +11,11 @@ func MaxProfit(prices []int) int {
 		if prices[i] < prices[buy] {
 			buy = i
 			sell = buy
-
 		}
 		if prices[i] > prices[sell] {
 			sell = i
-			if prices[sell]-prices[buy] > max_profit {
-				max_profit = prices[sell] - prices[buy]
-			}
-
+			max_profit = max_profit + prices[sell] - prices[buy]
+			buy = i
 		}
 	}
 	return max_profit
