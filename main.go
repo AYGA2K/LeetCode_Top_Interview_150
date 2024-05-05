@@ -7,8 +7,5 @@ import (
 )
 
 func main() {
-	arr := []int{2, 3, 1, 1, 4}
-	arr2 := []int{3, 2, 1, 0, 4}
-	fmt.Println(leet.CanJump(arr))
-	fmt.Println(leet.CanJump(arr2))
+	fmt.Println(leet.WordPattern("aba", "cat cat cat dog"))
 }
