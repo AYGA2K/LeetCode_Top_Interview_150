@@ -10,6 +10,7 @@ func IsAnagram(s string, t string) bool {
 	for _, v := range s {
 		map1[string(v)] = map1[string(v)] + 1
 	}
+
 	for _, v := range t {
 		map2[string(v)] = map2[string(v)] + 1
 	}
