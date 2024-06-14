@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(leet.WordPattern("aba", "cat cat cat dog"))
+	fmt.Println(leet.IsHappy(9))
 }
