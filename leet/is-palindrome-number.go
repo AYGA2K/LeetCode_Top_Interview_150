@@ -1,6 +1,6 @@
 package leet
 
-func isPalindrome(x int) bool {
+func IsPalindromeNumber(x int) bool {
 	if x < 0 {
 		return false
 	}
@@ -8,8 +8,10 @@ func isPalindrome(x int) bool {
 }
 
 func reverse(n int) int {
-	if n > 0 {
-		return n%10 + reverse(n/10)*10
+	reversed := 0
+	for n > 0 {
+		reversed = n%10 + reversed*10
+		n /= 10
 	}
-	return 0
+	return reversed
 }
