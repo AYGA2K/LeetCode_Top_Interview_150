@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(leet.IsHappy(9))
+	fmt.Println(leet.IsPalindromeNumber(121))
 }
